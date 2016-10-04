@@ -43,13 +43,15 @@ li {
   }
   .sub-nav {
     display: none;
+    counter-reset: section;
     li {
       color: #797979;
       padding: 10px;
       background: #E5E5E5;
       border-bottom: 1px solid #C9C9C9;
       &:before {
-        content: '01';
+        counter-increment: section;
+        content: "0" counter(section);
         font-size: 12px;
         margin-right: 10px;
         color: #AAA6A6;

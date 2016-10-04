@@ -5839,14 +5839,16 @@ li {
     #main-menu .top-nav.open div span {
       background-color: #435416; }
   #main-menu .sub-nav {
-    display: none; }
+    display: none;
+    counter-reset: section; }
     #main-menu .sub-nav li {
       color: #797979;
       padding: 10px;
       background: #E5E5E5;
       border-bottom: 1px solid #C9C9C9; }
       #main-menu .sub-nav li:before {
-        content: '01';
+        counter-increment: section;
+        content: "0" counter(section);
         font-size: 12px;
         margin-right: 10px;
         color: #AAA6A6; }
