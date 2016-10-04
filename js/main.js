@@ -6,10 +6,12 @@
 
     $topNav.on('click', function(){
       var $this = $(this);
+
+      $this.addClass('open');
       if($this.siblings().hasClass('open')){
         $this.siblings().removeClass('open');
-        $this.addClass('open');
       }
+
       $this.siblings().find('.sub-nav').slideUp();
       $this.find('.sub-nav').slideDown();
 
