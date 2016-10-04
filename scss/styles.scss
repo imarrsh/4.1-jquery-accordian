@@ -12,7 +12,20 @@ li {
 #main-menu {
   width: 300px;
   font-weight: bold;
-  .top-nav{
+  i {
+    display: inline-block;
+    width: 25px;
+    // vertical-align: middle;
+  }
+  span {
+    display: inline-block;
+    float: right;
+    padding: 1px 8px;
+    border: 1px solid #C9C9C9;
+    border-radius: 10px;
+    vertical-align: middle;
+  }
+  .top-nav div{
     background-image: linear-gradient(180deg, #6A6C71, #4B4D51);
     padding: 10px;
     color: #ffffff;
@@ -32,30 +45,19 @@ li {
       color: #ffffff;
     }
   }
-  .sub-nav li {
+  .sub-nav {
     // display: none;
-    color: #797979;
-    padding: 10px;
-    background: #E5E5E5;
-    border-bottom: 1px solid #C9C9C9;
-    &:before {
-      content: '01';
-      font-size: 12px;
-      margin-right: 10px;
-      color: #AAA6A6;
+    li {
+      color: #797979;
+      padding: 10px;
+      background: #E5E5E5;
+      border-bottom: 1px solid #C9C9C9;
+      &:before {
+        content: '01';
+        font-size: 12px;
+        margin-right: 10px;
+        color: #AAA6A6;
+      }
     }
-  }
-  i {
-    display: inline-block;
-    width: 25px;
-    // vertical-align: middle;
-  }
-  span {
-    display: inline-block;
-    float: right;
-    padding: 1px 8px;
-    border: 1px solid #C9C9C9;
-    border-radius: 10px;
-    vertical-align: middle;
   }
 }
