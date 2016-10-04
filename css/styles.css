@@ -5816,16 +5816,6 @@ li {
 #main-menu {
   width: 300px;
   font-weight: bold; }
-  #main-menu i {
-    display: inline-block;
-    width: 25px; }
-  #main-menu span {
-    display: inline-block;
-    float: right;
-    padding: 1px 8px;
-    border: 1px solid #C9C9C9;
-    border-radius: 10px;
-    vertical-align: middle; }
   #main-menu .top-nav div {
     background-image: linear-gradient(180deg, #6A6C71, #4B4D51);
     padding: 10px;
@@ -5837,17 +5827,17 @@ li {
       text-shadow: none; }
       #main-menu .top-nav div:hover span {
         background-color: #435416; }
+    #main-menu .top-nav div span {
+      border: 0;
+      background-color: #404247;
+      box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.3);
+      color: #ffffff; }
   #main-menu .top-nav.open div {
     background-image: linear-gradient(180deg, #ABC45C, #748B2F);
     color: #435416;
     text-shadow: none; }
     #main-menu .top-nav.open div span {
       background-color: #435416; }
-  #main-menu .top-nav span {
-    border: 0;
-    background-color: #404247;
-    box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.3);
-    color: #ffffff; }
   #main-menu .sub-nav {
     display: none; }
     #main-menu .sub-nav li {
@@ -5860,5 +5850,15 @@ li {
         font-size: 12px;
         margin-right: 10px;
         color: #AAA6A6; }
+  #main-menu i {
+    display: inline-block;
+    width: 25px; }
+  #main-menu span {
+    display: inline-block;
+    float: right;
+    padding: 1px 8px;
+    border: 1px solid #C9C9C9;
+    border-radius: 10px;
+    vertical-align: middle; }
 
 /*# sourceMappingURL=styles.css.map */
